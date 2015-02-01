@@ -1,3 +1,13 @@
 html, body {
   margin: 20px;
+  align: center;
+}
+
+.newNoteArea {
+  width: 30%;
+  height: 200px;
+}
+
+.createNoteButton {
+  width: 30%;
 }
