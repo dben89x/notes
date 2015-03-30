@@ -1,13 +1,35 @@
 html, body {
+  font-family: 'Papyrus';
   margin: 20px;
   align: center;
 }
 
 .newNoteArea {
+  font-family: 'Papyrus';
+  font-size:1.5em;
   width: 30%;
   height: 200px;
+  background:yellow;
+  box-shadow:-5px -5px 5px black;
 }
 
 .createNoteButton {
+  font-family: 'Papyrus';
   width: 30%;
+}
+
+.deleteNoteButton {
+  font-family: 'Papyrus';
+}
+
+.noteShow {
+  padding:30px;
+  box-shadow:-5px -5px 5px black;
+  width: 25%;
+  height:200px;
+  display:inline-block;
+  border: 1px solid black;
+  background:yellow;
+  margin:5px;
+  word-wrap:break-word;
 }

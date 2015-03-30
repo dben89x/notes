@@ -1,8 +1,10 @@
-{{textarea placeholder="Add a note!" value=noteCopy class='newNoteArea'}}<br>
-<button class='createNoteButton'{{action 'newNote'}}>Save Note</button>
-
+{{textarea placeholder="Add a note!" value=noteCopy class='newNoteArea' autofocus=true}}<br>
+<button class='createNoteButton'{{action 'newNote'}}>Save Note</button><br><br>
+<br>
 {{#each note in model}}
-  <br>{{note.body}}
-  <button name="deleteNote" {{action 'deleteNote' note.id}}>Delete</button>
+  <div class="noteShow">
+      {{note.body}}
+  <button name="deleteNote" class='deleteNoteButton'{{action 'deleteNote' note.id}}>Delete</button>
+</div>
 {{/each}}
 {{outlet}}
