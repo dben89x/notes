@@ -1,35 +1,48 @@
 html, body {
-  font-family: 'Papyrus';
-  margin: 20px;
-  align: center;
+  font-family: 'Indie Flower';
+  margin: 50px;
 }
 
 .newNoteArea {
-  font-family: 'Papyrus';
+  font-family: 'Indie Flower';
   font-size:1.5em;
   width: 30%;
   height: 200px;
   background:yellow;
   box-shadow:-5px -5px 5px black;
 }
-
-.createNoteButton {
-  font-family: 'Papyrus';
-  width: 30%;
+.newNoteArea:focus{
+  outline:none;
 }
 
-.deleteNoteButton {
-  font-family: 'Papyrus';
+.createNoteButton {
+  border-radius:.25em;
+  background: green;
+  font-family: 'Indie Flower';
+  width: 30%;
+  border:none;
+}
+.createNoteButton:hover, .createNoteButton:focus{
+  border:none;
+  outline:none;
+  background-color: #03f740;
+  transition: .5s;
+  cursor:pointer;
+}
+.deleteNoteButton:hover{
+  cursor:pointer;
 }
 
 .noteShow {
-  padding:30px;
+  padding:20px;
   box-shadow:-5px -5px 5px black;
   width: 25%;
   height:200px;
-  display:inline-block;
+  float:left;
   border: 1px solid black;
   background:yellow;
-  margin:5px;
+  margin:10px;
+  margin-left:3.3%;
   word-wrap:break-word;
+  overflow:scroll;
 }
